@@ -40,13 +40,15 @@ def hit?(initial_round)
   # code hit? here
   prompt_user
   get_user_input
-  if get_user_input == "s"
-    initial_round
-  elsif get_user_input == "h"
+  action = get_user_input
+ case action
+ when 's'
+  initial_round
+ when 'h'
   initial_round + deal_card
-else
+ else 
   invalid_command
-end
+ end
 end
 
 def invalid_command
