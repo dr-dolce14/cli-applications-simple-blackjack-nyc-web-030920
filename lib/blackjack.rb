@@ -44,7 +44,7 @@ def hit?(initial_round)
  when 's'
   initial_round
  when 'h'
-  initial_round + deal_card
+  initial_round+= deal_card
  else 
   invalid_command
  end
