@@ -47,6 +47,7 @@ def hit?(initial_round)
   initial_round+= deal_card
  else 
   invalid_command
+  prompt_user
  end
 end
 
