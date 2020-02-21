@@ -48,6 +48,7 @@ def hit?(initial_round)
  else 
   invalid_command
   prompt_user
+  action = get_user_input
  end
 end
 
