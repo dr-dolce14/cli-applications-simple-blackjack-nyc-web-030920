@@ -39,7 +39,6 @@ end
 def hit?(initial_round)
   # code hit? here
   prompt_user
-  get_user_input
   action = get_user_input
  case action
  when 's'
