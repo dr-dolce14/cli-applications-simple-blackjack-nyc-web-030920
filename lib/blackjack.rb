@@ -41,7 +41,13 @@ def hit?(num)
   prompt_user
   get_user_input
   case get_user_input
-  
+  when 's'
+    initial_round
+    when 'h'
+      deal_card + deal_card
+    else
+      invalid_command
+    end
 end
 
 def invalid_command
